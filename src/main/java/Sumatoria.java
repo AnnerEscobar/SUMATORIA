@@ -14,16 +14,19 @@ public class Sumatoria {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] numeros = new int[]{1,2,3,4,5,6,7,8,9};
-        int contador =0;
-        for(int i=0; i<numeros.length; i++){
-            if(numeros[i]%2==0){
-                contador ++;
+        int[] numeros = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int contador = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 == 0) {
+                contador++;
+            } else if (numeros[i] == 5) {
+                contador = contador + 5;
+            } else if (numeros[i] % 2 != 0 && numeros[i] != 5) {
+                contador = contador + 3;
             }
         }
         System.out.println("lA SUMATORIA ES " + contador);
-        
-        
+
     }
-    
+
 }
